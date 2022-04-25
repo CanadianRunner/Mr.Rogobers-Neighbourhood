@@ -1,0 +1,32 @@
+#record-video {
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index:-1;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+}
+
+h1 {
+  padding: 100px;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.form-group {
+  padding: 100px;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+#user-response {
+  padding: 100px;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
