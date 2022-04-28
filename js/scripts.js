@@ -1,28 +1,32 @@
 //business logic
 userInput = text => {
+  let outputtedValuesArray = [];
   let textAreaInput = parseInt(text);
 
-  const numbersArray = [...Array(textAreaInput+1).keys()].map (function(number) {
-    string = number.toString();
+
+  for (let i = 0; i <= textAreaInput; i++) {
     
-    if (string.includes('3')) {
-      return string = `\'Won't you be my neighbour?\'`;
+  
+    stringIteration = i.toString();
+    
+    if (stringIteration.includes('3')) {
+      outputtedValuesArray.push(`\'Won't you be my neighbour?\'`);
     }
 
-    else if (string.includes('2')) {
-      return string = `\'Boop!\'`;
+    else if (stringIteration.includes('2')) {
+      outputtedValuesArray.push(`\'Boop!\'`);
     }
 
-    else if (string.includes('1')) {
-      return string = `\'Beep!\'`;
+    else if (stringIteration.includes('1')) {
+      outputtedValuesArray.push(`\'Beep!\'`);
     } 
 
     else {
-      return string;
+      outputtedValuesArray.push(stringIteration);
     }
-  });
+  };
     
-  return numbersArray.join(', ');
+  return outputtedValuesArray.join(', ');
 };
 
 
